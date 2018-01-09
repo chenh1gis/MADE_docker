@@ -15,6 +15,7 @@ $COMBINED=$ARGV[3];
 $ALIGNED=$ARGV[4];
 $OUTFILE=$ARGV[5];
 
+
 if ($SUBTYPE==1)
 {
 	@CODON=(89,97,129,134,161,185,186,221,222,226);
@@ -37,7 +38,7 @@ else
 
 if ($SUBTYPE==1)
 {
-	$filename="H1N1seasonal_HA1_ref.fa";
+	$filename="../DATA/H1N1seasonal/H1N1seasonal_HA1_sequence_ref.fa";
 	if (-e $filename)
 	{
 		open (REF,"$filename");
@@ -50,7 +51,7 @@ if ($SUBTYPE==1)
 }
 elsif ($SUBTYPE==2)
 {
-        $filename="H1N1pdm_HA1_ref.fa";
+        $filename="../DATA/H1N1pdm/H1N1pdm_HA1_sequence_ref.fa";
         if (-e $filename)
         {
                 open (REF,"$filename");
@@ -63,7 +64,7 @@ elsif ($SUBTYPE==2)
 }
 else
 {
-        $filename="H3N2_HA1_ref.fa";
+        $filename="../DATA/H3N2/H3N2_HA1_sequence_ref.fa";
         if (-e $filename)
         {
                 open (REF,"$filename");
